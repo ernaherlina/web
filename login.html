@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Klinik BTH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+
+<body class="bg-[#3b82f6] min-h-screen flex flex-col">
+
+<header class="bg-[#fff1f1] py-2 px-6 flex justify-between items-center border-b border-blue-400">
+    <div class="flex items-center space-x-2">
+        <img src="img/logo_klinik.png" alt="Logo Klinik">
+    </div>
+    <div>
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+        </a>
+    </div>
+</header>
+
+<main class="flex-grow flex items-center justify-center p-4">
+    <div class="bg-[#fff1f1] w-full max-w-lg p-10 rounded-sm shadow-lg">
+        
+        <h1 class="text-2xl font-bold text-black mb-2">Login</h1>
+        <p class="text-[10px] text-gray-600 leading-tight mb-8">
+            Masukkan NIM dan Password Anda untuk<br>mengakses dashboard sistem
+        </p>
+
+        <form id="formLogin" class="space-y-6">
+
+            <input type="text" name="nim" id="nim" placeholder="NIM" required
+                class="w-full bg-[#d9d9d9] px-4 py-3 text-sm rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
+
+            <input type="password" name="password" id="password" placeholder="Password" required
+                class="w-full bg-[#d9d9d9] px-4 py-3 text-sm rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
+
+            <div class="pt-4 flex justify-center">
+                <button type="submit"
+                    class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-12 rounded transition duration-200 shadow-md">
+                    Login
+                </button>
+            </div>
+
+        </form>
+
+        <div class="mt-16 flex justify-between items-center text-sm">
+            <p class="text-gray-700">
+                Belum punya akun? 
+                <a href="registrasi.html" class="font-medium hover:underline text-blue-600">Registrasi</a>
+            </p>
+            <a href="#" class="text-blue-500 font-medium hover:underline">Lupa Password</a>
+        </div>
+
+    </div>
+</main>
+
+<footer class="p-6 flex justify-end">
+    <div class="flex items-center space-x-2">
+        <img src="img/logo_kemenkes.png" alt="Logo Kemenkes">
+    </div>
+</footer>
+
+<script>
+    const formLogin = document.getElementById('formLogin');
+
+    formLogin.addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        
+        
+        alert('Login Berhasil! Selamat Datang di Dashboard.');
+        
+        // Pastikan file dashboard kamu bernama dashboard.html
+        window.location.href = 'dashboard.html'; 
+    });
+</script>
+
+</body>
+</html>
