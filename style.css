@@ -1,0 +1,295 @@
+style index
+/* Custom CSS */
+body {
+    scroll-behavior: smooth;
+}
+
+/* Penyesuaian agar ikon di footer berwarna putih */
+.invert {
+    filter: brightness(0) invert(1);
+}
+
+/* Animasi hover sederhana untuk card */
+.cursor-pointer:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #334155;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59,130,246,0.2);
+}
+
+.btn-daftar {
+    width: 100%;
+    margin-top: 20px;
+    background: #3b82f6;
+    color: white;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-daftar:hover {
+    background: #2563eb;
+}
+
+/* ===== DASHBOARD ===== */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f1f5f9;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(180deg, #16a34a, #2563eb);
+    color: white;
+    position: fixed;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* HEADER */
+.header {
+    margin-left: 250px;
+    height: 70px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.header h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.user {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* CONTENT */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #334155;
+}
+
+.card p {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* WARNA */
+.green {
+    border-left: 6px solid #16a34a;
+}
+
+.blue {
+    border-left: 6px solid #2563eb;
+}
+
+.orange {
+    border-left: 6px solid #f97316;
+}
+
+/* TABLE */
+.table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.table th {
+    background: #2563eb;
+    color: white;
+}
+
+/* =========================
+   DASHBOARD KLINIK BTH
+========================= */
+
+body{
+    background: #f4f7fb;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* SIDEBAR */
+.sidebar{
+    background: linear-gradient(180deg,#1e3a8a,#2563eb,#38bdf8);
+    color: white;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* MENU */
+.menu-item{
+    transition: 0.3s;
+    border-radius: 18px;
+    padding: 14px 18px;
+}
+
+.menu-item:hover{
+    background: rgba(255,255,255,0.18);
+    transform: translateX(6px);
+}
+
+/* MENU ACTIVE */
+.menu-active{
+    background: white;
+    color: #2563eb !important;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* CARD */
+.card-dashboard{
+    border-radius: 28px;
+    padding: 28px;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.card-dashboard:hover{
+    transform: translateY(-6px);
+}
+
+/* WARNA CARD */
+.card-blue{
+    background: linear-gradient(135deg,#3b82f6,#2563eb);
+}
+
+.card-green{
+    background: linear-gradient(135deg,#22c55e,#16a34a);
+}
+
+.card-orange{
+    background: linear-gradient(135deg,#fb923c,#f97316);
+}
+
+.card-white{
+    background: white;
+    color: #1e293b;
+}
+
+/* QUICK MENU */
+.quick-menu{
+    background: white;
+    border-radius: 28px;
+    transition: 0.3s;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.quick-menu:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.14);
+}
+
+/* PROFILE */
+.profile-box{
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* TITLE */
+.title-dashboard{
+    color: #0f172a;
+    font-weight: 700;
+}
+
+/* SUBTITLE */
+.subtitle-dashboard{
+    color: #64748b;
+}
+
+/* LOGOUT */
+.logout-btn{
+    color: #ef4444;
+    transition: 0.3s;
+}
+
+.logout-btn:hover{
+    color: #dc2626;
+    transform: translateX(5px);
+}
