@@ -90,14 +90,6 @@ style="background-image: url('assets/img/gedung_direktorat.png');">
           </p>
         </div>
 
-        <!-- admin -->
-        <div class="text-center mt-3">
-          <a href="login_admin.php"
-          class="text-orange-500 text-sm hover:underline">
-            Login sebagai Admin
-          </a>
-        </div>
-
         <!-- lupa password -->
         <div class="text-center mt-3">
           <p class="text-sm text-gray-500">
